@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+* Using multiple levels of indirection can provide flexibility
+* in how code can be written.
+*/
+
 int movies(void) {
     char *titles[] = {"Hackers", "The Net", "Swordfish", "Antitrust"};
     char **levi_rating[4];
@@ -48,7 +53,12 @@ int indirection(void) {
     designers[0] = &names[0];
     printf("Designer: %s\n", *designers[0]);
     
-    names[0] = "Chris";
+    /* 
+    * I can easily change the name in the names array 
+    * and it will change in the other arrays. If we 
+    * were to use only arrays, this would be much harder
+    */
+    names[0] = "Levi Durfee";
     printf("Developer: %s\n", *developers[0]);
     printf("Designer: %s\n", *designers[0]);
     return 1;
