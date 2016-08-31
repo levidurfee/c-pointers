@@ -1,0 +1,1 @@
+int indirection(void);
