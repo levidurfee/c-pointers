@@ -5,6 +5,8 @@ int main() {
     if(indirection()) {
         printf("Yay\n");
     }
-    movies();
+    if(movies()) {
+        printf("Yay2\n");
+    }
     return 0;
 }
