@@ -17,10 +17,11 @@ int dma(void) {
         printf("pi memory address:\t\t\t%p\n", &pi);
         
         // use calloc when memory needs zerod out
-        pi = calloc(50, sizeof(int));
+        //pi = calloc(50, sizeof(int));
         free(pi);
-        printf("pi still contains the memory address:\t%p\n", &pi);
-        printf("pi is empty: %d\n", *pi);        
+        //printf("pi still contains the memory address:\t%p\n", &pi);
+        //printf("pi is empty: %d\n", *pi);
+        pi = NULL;
     }
     return 1;
 }
