@@ -14,5 +14,10 @@ int main() {
     if(dma()) {
         printf("Completed 4\n");
     }
+    printf("\nFunction Pointer\n");
+    int n = 5;
+    int (*fptr)(int);
+    fptr = square;
+    printf("%d squared is %d\n", n, fptr(n));
     return 0;
 }
