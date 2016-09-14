@@ -15,5 +15,6 @@ int lol_strings(void) {
     *(header + 2) = 'L';
     *(header + 3) = 'e';
     printf("%s and %s\n", header, head);
+    free(header);
     return 1;
 }

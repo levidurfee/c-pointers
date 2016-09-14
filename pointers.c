@@ -32,6 +32,7 @@ int main() {
         // pointer is passed will depend on the result of compute
         return op(num1, num2);
     }
+
     printf("%d\n", compute(add, 50, 60));
     printf("%d\n", compute(sub, 50, 60));
     if(lol_strings()) {
